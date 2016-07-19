@@ -44,19 +44,17 @@ function draw() {
 
     if (canvas.getContext) {
         var ctx = canvas.getContext('2d');
-        var images = loadImages(["redBall.png", "wood.jpg"]);
+        var images = loadImages(["redBall.png", "wood.jpg", "stars_web.jpg"]);
         var woodPattern;
         animate();
     } else {
         console.log("Canvas-unsupported code here");
     }
-    
-    var backgroundTiles = [images[1]]
 
     function animate() {
         ctx.clearRect(0, 0, canvasWidth, canvasHeight);
         
-        starPattern = ctx.createPattern(images[1], "repeat");
+        starPattern = ctx.createPattern(images[2], "repeat");
         ctx.fillStyle = starPattern;
         var bgX = 0;
         var bgY = 0;

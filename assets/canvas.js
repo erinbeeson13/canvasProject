@@ -56,8 +56,8 @@ function draw() {
     function animate() {
         ctx.clearRect(0, 0, canvasWidth, canvasHeight);
         
-        woodPattern = ctx.createPattern(images[2], "repeat");
-        ctx.fillStyle = woodPattern;
+        starPattern = ctx.createPattern(images[2], "repeat");
+        ctx.fillStyle = starPattern;
         var bgX = 0;
         var bgY = 0;
         var cont = false;

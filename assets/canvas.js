@@ -30,7 +30,7 @@ function draw() {
     var canvasWidth = canvas.width;
     var canvasHeight = canvas.height;
 
-    var circle = {'x': 10, 'y': 10, 'xVel': 5, 'yVel': 5, 'diameter': 20};
+    var alien = {'x': 10, 'y': 10, 'xVel': 5, 'yVel': 5, 'diameter': 100};
 
     var requestAnimationFrame =
         window.requestAnimationFrame ||
@@ -72,9 +72,9 @@ function draw() {
         };
         
         
-        
-        ctx.drawImage(images[3], circle.x, circle.y, circle.diameter, circle.diameter);
-        circle.x += circle.xVel;
+        for (i=0, i)
+        ctx.drawImage(images[3], alien.x, alien.y, alien.diameter, alien.diameter);
+        alien.x += alien.xVel;
 
         if (circle.x > canvasWidth - circle.diameter|| circle.x < 0) {
             circle.xVel *= -1

@@ -71,8 +71,7 @@ function draw() {
 			}
         };
         
-        
-        for (i=0, i)
+       
         ctx.drawImage(images[3], alien.x, alien.y, alien.diameter, alien.diameter);
         alien.x += alien.xVel;
 

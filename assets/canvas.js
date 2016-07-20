@@ -44,7 +44,7 @@ function draw() {
 
     if (canvas.getContext) {
         var ctx = canvas.getContext('2d');
-        var images = loadImages(["redBall.png", "wood.jpg", "stars_web.jpg"]);
+        var images = loadImages(["redBall.png", "wood.jpg", "stars_web.jpg", "Alien.png" ]);
         var woodPattern;
         animate();
     } else {
@@ -73,7 +73,7 @@ function draw() {
         
         
         
-        ctx.drawImage(images[0], circle.x, circle.y, circle.diameter, circle.diameter);
+        ctx.drawImage(images[3], circle.x, circle.y, circle.diameter, circle.diameter);
         circle.x += circle.xVel;
 
         if (circle.x > canvasWidth - circle.diameter|| circle.x < 0) {

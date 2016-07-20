@@ -75,8 +75,8 @@ function draw() {
         ctx.drawImage(images[3], alien.x, alien.y, alien.diameter, alien.diameter);
         alien.x += alien.xVel;
 
-        if (circle.x > canvasWidth - circle.diameter|| circle.x < 0) {
-            circle.xVel *= -1
+        if (alien.x > canvasWidth - alien.diameter|| alien.x < 0) {
+            alien.xVel *= -1
         }
 
         requestAnimationFrame(animate);
